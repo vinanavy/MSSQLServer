@@ -1,0 +1,6 @@
+
+CREATE TABLE GiaoVien
+(
+	MaGV NVARCHAR(10),
+	TenGV NVARCHAR(30)
+)
