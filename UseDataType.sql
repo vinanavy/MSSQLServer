@@ -49,6 +49,5 @@ DELETE dbo.UseDataType
 --Cập nhật dữ liệu
 --1. Update toàn bộ dữ liệu bảng bởi nhiều trường update
 UPDATE dbo.UseDataType SET TienLuong = 20000
-
 --2. Update dữ liệu của trường mong muốn
 UPDATE dbo.UseDataType SET TienLuong = 5000 WHERE GioiTinh = 0
