@@ -109,3 +109,11 @@ VALUES  ( 'GV03' , -- MaGV - char(10)
           0 , -- Sex - bit
           'BM03'  -- MaBM - char(10)
         )
+
+--Truy vấn CSDL
+--1. Lấy toàn bộ dữ liệu trong 1 bảng nào đó
+SELECT * FROM dbo.BoMon
+--2. Lấy dữ liệu 1 trường trong 1 bảng
+SELECT TenBM FROM dbo.BoMon
+-- Đổi tên cột hiển thị
+SELECT MaBM AS 'Mã Bộ Môn', TenBM AS N'Tên Bộ Môn' FROM dbo.BoMon
