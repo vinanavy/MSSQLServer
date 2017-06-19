@@ -1,0 +1,22 @@
+CREATE TABLE DangNhapDB
+(
+	Tk VARCHAR(20) PRIMARY KEY NOT NULL,
+	Mk VARCHAR(50)
+)
+
+GO
+
+CREATE PROCEDURE DataDN
+	@Tk VARCHAR(20),
+	@Mk VARCHAR(50)
+AS
+BEGIN
+	DECLARE @count INT
+	DECLARE @res BIT
+	SELECT @count = COUNT(*) FROM dbo.DangNhapDB WHERE Tk = @Tk AND Mk = @Mk
+	IF @count > 0
+		SET @res = 1
+	ELSE
+		SET @res = 0
+	SELECT @res
+END

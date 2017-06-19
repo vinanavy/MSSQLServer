@@ -1,0 +1,8 @@
+USE DangNhap
+GO
+
+CREATE PROCEDURE ThongTinTK
+AS
+BEGIN
+	SELECT * FROM dbo.ThongTin
+END

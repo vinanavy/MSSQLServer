@@ -147,6 +147,22 @@ SELECT MaBM FROM dbo.BoMon WHERE MaBM = 'BM01'
 	WHERE BoMon.MaBM = GiaoVien.MaGV
 */
 
+/* INSERT INTO SELECT 
+
+*/
+
+/*
+	Truy vấn lồng
+
+*/
+
+/*
+View
+*/
+
+
+
+
 
 
 

@@ -1,0 +1,8 @@
+CREATE DATABASE LoginData
+GO
+
+CREATE TABLE AccountData
+(
+	Username VARCHAR(20) PRIMARY KEY NOT NULL,
+	Pass VARCHAR(50)
+)
